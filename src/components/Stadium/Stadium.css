@@ -1,0 +1,5 @@
+.container-stadium {
+    height: 100vh;
+    background: url('../../assets/stade-psg.jpg') no-repeat;
+    background-size: cover;
+}
