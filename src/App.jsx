@@ -9,6 +9,8 @@ import Previous from './components/Match/PreviousMatch';
 import Next from './components/Match/NextMatch';
 import Stadium from './components/Stadium/Stadium';
 import Admin from './components/admin/Admin';
+import PlayerCard from './components/Card/PlayerCard';
+import TrainerCard from './components/Card/TrainerCard';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path="/prochains-matchs" component={Next}/>
           <Route path="/le-stade" component={Stadium}/>
           <Route path="/admin" component={Admin}/>
+          <Route exact path ='/joueur/:id' component={PlayerCard} />
+          <Route exact path = '/entraineur/:id' component={TrainerCard}/>
       </Switch>
       <Footer />
     </div>
