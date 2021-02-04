@@ -1,0 +1,13 @@
+.container-home {
+    z-index: 1;  
+    margin-bottom: -10px;
+}
+
+.container-home img{
+    z-index: 1;
+}
+
+.bg-home {
+    width: 100vw;
+    margin-top: 50px;
+}
