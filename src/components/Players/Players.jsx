@@ -37,10 +37,9 @@ export default function Players() {
                 <div className="player-div" key={index}>
                     <img src={item.picture} className="trainer-picture"  alt="Portrait"/>
                     <div className="name-flag">
-                        <p>{item.name}</p>
+                        <h3>{item.name}</h3>
                         <img src={item.nationality} alt="flag"/>
                     </div>
-                    
                     <p>Entraineur</p>
                     <Link to={{ pathname: `/entraineur/${item.id}`} }><button className="button">Voir la fiche</button></Link>
                     
@@ -54,7 +53,7 @@ export default function Players() {
                 <div className="player-div" key={index}>
                     <img src={item.picture_all} className="player-picture" alt="Portrait"/>
                     <div className="name-flag">
-                        <p>{item.name}</p>
+                        <h3>{item.name}</h3>
                         <img src={item.nationality} alt="flag"/>
                     </div>
                     <p>{item.post}</p>

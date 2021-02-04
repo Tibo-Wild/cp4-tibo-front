@@ -1,0 +1,52 @@
+.bg-legend {
+    padding-top: 82px;
+    width: 100vw;
+    border-bottom: 2px solid #ff1541;
+}
+
+.container-legends h2 {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #151e2d;
+}
+
+.legends {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.legend-picture {
+    height: 300px;
+    border: 2px solid #ff1541;
+}
+
+.legend-name-flag img {
+    width: 30px;
+    margin-left: 20px;
+    padding-top: 0;
+    border: none;
+}
+
+.legend-name-flag {
+    display: flex;
+    align-items: center;
+    margin-bottom: -8px;
+}
+
+.legend-div p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.legend-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
