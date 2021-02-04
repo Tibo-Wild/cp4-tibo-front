@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+.container-players {
+    padding-top: 100px;
+}
+
+.container-players h2 {
+    text-align: center;
+}
+
+.trainer {
+    display: flex;
+    justify-content: center;
+}
+
+.trainer-picture {
+    height: 400px;
+}
+
+.name-flag {
+    display: flex;
+    align-items: center;
+}
+
+.name-flag img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: #151e2d;
+    color: white;
+    border-radius: 12px;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #ff1541;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.separation-line-title {
+    background-color: #ff1541;
+    height: 2px;
+    width: 300px;
+}
+.separation-line {
+    background-color: #ff1541;
+    height: 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+.title-player {
+    text-align: center;
+}
+.players-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.player-picture {
+    height: 400px;
+}
+
+.player-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

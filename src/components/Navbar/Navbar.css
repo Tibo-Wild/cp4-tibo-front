@@ -10,9 +10,10 @@ body {
     padding-right: 30px;
     padding-left: 30px;
     background-color: #151e2d;
-    height: 90px;
+    height: 80px;
     position: fixed;
     width: 97vw;
+    border-bottom: 2px solid #ff1541;
 }
 
 .nav-logo {
@@ -24,7 +25,10 @@ body {
     color: white;
     font-style: italic;
     text-shadow: 4px 0 #00ecff, 0 -4px 0 #ff1541;
-    font-size: 36px;
+    font-size: 42px;
+    align-items: flex-end;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 .nav-menu {
     display: flex;
@@ -37,12 +41,17 @@ body {
     margin-right: 25px;
     margin-bottom: 8px;
     color: white;
+    font-size: 16px;
+}
+.nav-menu p:hover {
+    color: #ff1541;
 }
 
-.nav-menu a {
+.container-nav a {
     text-decoration: none;
 }
 
 .nav-menu a:hover {
     transform: scaleX(1.3);
+    color: #ff1541;
 }
