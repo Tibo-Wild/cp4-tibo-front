@@ -5,6 +5,8 @@ import { Switch, Route} from 'react-router-dom';
 import Home from './components/Home/Home';
 import Players from './components/Players/Players';
 import Login from './components/Login/Login';
+import Previous from './components/Match/PreviousMatch';
+import Next from './components/Match/NextMatch';
 
 
 
@@ -16,6 +18,8 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route path="/effectif" component={Players}/>
           <Route path="/login" component={Login}/>
+          <Route path="/derniers-matchs" component={Previous}/>
+          <Route path="/prochains-matchs" component={Next}/>
       </Switch>
       <Footer />
     </div>
