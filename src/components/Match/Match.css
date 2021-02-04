@@ -1,0 +1,35 @@
+.title-match {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.container-previous-matchs, .container-next-matchs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 240px;
+    margin-right: 240px;
+    border: 2px solid #151e2d;
+    margin-top: 10px;
+    background-color: #ff1541;
+}
+
+.container-previous-matchs p, .container-next-matchs p{
+    width: 250px;
+    text-align: center;
+}
+
+.container-previous, .container-next {
+    padding-top: 100px;
+    height: 85vh;
+}
+
+.container-previous img, .container-next img {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-previous-matchs .score-separation, .container-next-matchs .score-separation {
+    width: min-content;
+}
