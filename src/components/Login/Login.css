@@ -43,3 +43,8 @@ label, input {
     color: white;
     border-radius: 12px;
 }
+
+.button-form:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

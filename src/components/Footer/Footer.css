@@ -1,6 +1,6 @@
 .container-footer {
     background-color: #151e2d;
-    height: 80px;
+    height: 60px;
     z-index: 3;
     display: flex;
     justify-content: space-around;
@@ -10,6 +10,5 @@
 }
 
 .container-footer img {
-    width: 30px;
-    margin: 20px;
+    width: 40px;
 }

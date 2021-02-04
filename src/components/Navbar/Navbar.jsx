@@ -17,8 +17,8 @@ export default function Navbar() {
                 <Link to="/effectif"><p>Effectif</p></Link>
                 <Link to="/derniers-matchs"><p>Derniers Matchs</p></Link>
                 <Link to="/prochains-matchs"><p>Prochains Matchs</p></Link>
-                <Link to=""><p>Le stade</p></Link>
-                <Link to=""><p>Légendes du club</p></Link>
+                <Link to="/le-stade"><p>Le stade</p></Link>
+                <Link to="/nos-legendes"><p>Légendes du club</p></Link>
                 <Link to="/login"><p>Login</p></Link>
             </div>
         </div>

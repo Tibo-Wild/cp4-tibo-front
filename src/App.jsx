@@ -7,7 +7,8 @@ import Players from './components/Players/Players';
 import Login from './components/Login/Login';
 import Previous from './components/Match/PreviousMatch';
 import Next from './components/Match/NextMatch';
-
+import Stadium from './components/Stadium/Stadium';
+import Admin from './components/admin/Admin';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/login" component={Login}/>
           <Route path="/derniers-matchs" component={Previous}/>
           <Route path="/prochains-matchs" component={Next}/>
+          <Route path="/le-stade" component={Stadium}/>
+          <Route path="/admin" component={Admin}/>
       </Switch>
       <Footer />
     </div>

@@ -21,7 +21,7 @@ export default function Next() {
             <h2 className="title-match">Prochains matchs</h2>
             {nextData.map((item, index) =>
             <div className="container-next-matchs" key={index}>
-                <p>{item.date}</p>
+                <p className="date-match">{item.date}</p>
                 <img src={item.logo_dom} alt="Logo équipe domicile"/>
                 <p>{item.dom}</p>
                 <p>{item.score_dom}</p>
