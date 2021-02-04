@@ -1,6 +1,8 @@
 .title-match {
     padding-top: 80px;
     text-align: center;
+    color: white;
+    font-size: 32px;
 }
 
 .container-previous-matchs, .container-next-matchs {
@@ -22,6 +24,8 @@
 .container-previous, .container-next {
     padding-top: 100px;
     height: 85vh;
+    background: url('../../assets/parc-des-princes.jpg') no-repeat;
+    background-size: cover;
 }
 
 .container-previous img, .container-next img {
