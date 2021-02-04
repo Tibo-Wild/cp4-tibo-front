@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Players.css';
 import axios from'axios';
+import { Link } from 'react-router-dom';
 
 
 export default function Players() {
@@ -41,7 +42,8 @@ export default function Players() {
                     </div>
                     
                     <p>Entraineur</p>
-                    <button className="button">Voir la fiche</button>
+                    <Link to={{ pathname: `/entraineur/${item.id}`} }><button className="button">Voir la fiche</button></Link>
+                    
                 </div>)}
             </div>
 
@@ -56,7 +58,7 @@ export default function Players() {
                         <img src={item.nationality} alt="flag"/>
                     </div>
                     <p>{item.post}</p>
-                    <button className="button">Voir la fiche</button>
+                    <Link to={{ pathname: `/joueur/${item.id}`} }><button className="button">Voir la fiche</button></Link>
                 </div>)}
             </div>
         </div>

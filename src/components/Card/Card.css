@@ -1,0 +1,31 @@
+.player-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.player-card-picture{
+    height: 600px;
+}
+.player-name-flag {
+    display: flex;
+    align-items: center;
+}
+
+.player-name-flag img {
+    height: 40px;
+    margin-left: 50px;
+}
+
+.button-card {
+    background-color: #ff1541;
+    color: white;
+    border: 1px solid #151e2d;
+    margin: 15px;
+    padding: 3px;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Oswald', sans-serif;
+}
