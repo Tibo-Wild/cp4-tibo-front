@@ -1,11 +1,27 @@
 import './App.css';
-import AdminList from './components/admin/AdminList';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import { Switch, Route} from 'react-router-dom';
+import Home from './components/Home/Home';
+import Players from './components/Players/Players';
+import Login from './components/Login/Login';
+import Previous from './components/Match/PreviousMatch';
+import Next from './components/Match/NextMatch';
+
 
 
 function App() {
   return (
     <div className="App">
-      <AdminList />
+      <Navbar />
+      <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/effectif" component={Players}/>
+          <Route path="/login" component={Login}/>
+          <Route path="/derniers-matchs" component={Previous}/>
+          <Route path="/prochains-matchs" component={Next}/>
+      </Switch>
+      <Footer />
     </div>
   );
 }
