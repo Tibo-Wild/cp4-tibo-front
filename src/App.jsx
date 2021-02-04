@@ -4,6 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import { Switch, Route} from 'react-router-dom';
 import Home from './components/Home/Home';
 import Players from './components/Players/Players';
+import Login from './components/Login/Login';
+
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
       <Navbar />
       <Switch>
           <Route exact path="/" component={Home}/>
-          <Route exact="/effectif" component={Players}/>
+          <Route path="/effectif" component={Players}/>
+          <Route path="/login" component={Login}/>
       </Switch>
       <Footer />
     </div>

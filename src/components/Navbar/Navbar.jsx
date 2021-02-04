@@ -15,11 +15,11 @@ export default function Navbar() {
             </div>
             <div className="nav-menu">
                 <Link to="/effectif"><p>Effectif</p></Link>
-                <Link><p>Derniers Matchs</p></Link>
-                <Link><p>Prochains Matchs</p></Link>
-                <Link><p>Le stade</p></Link>
-                <Link><p>Légendes du club</p></Link>
-                <Link><p>Login</p></Link>
+                <Link to=""><p>Derniers Matchs</p></Link>
+                <Link to=""><p>Prochains Matchs</p></Link>
+                <Link to=""><p>Le stade</p></Link>
+                <Link to=""><p>Légendes du club</p></Link>
+                <Link to="/login"><p>Login</p></Link>
             </div>
         </div>
     )
