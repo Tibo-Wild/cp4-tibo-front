@@ -1,12 +1,14 @@
 .container-footer {
     background-color: #151e2d;
     height: 60px;
+    width: 100%;
     z-index: 3;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-top: 2px solid #ff1541;
-    position: relative;
+    position: fixed;
+    bottom: 0%;
 }
 
 .container-footer img {
