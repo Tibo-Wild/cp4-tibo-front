@@ -21,7 +21,7 @@ export default function PlayerCard(props) {
             {player ? (
                 <div className="player-card">
                     <div className="player-card-picture">
-                        <img src={player[0].picture_all} alt="Portrait"/>
+                        <img src={player[0].picture_face} alt="Portrait"/>
                     </div>
                     <div>
                         <div className="player-name-flag">
@@ -36,7 +36,8 @@ export default function PlayerCard(props) {
                             <p>Nombre de match joué : {player[0].match} </p>
                             <p>Buts marqués : {player[0].but}</p>
                         </div>
-                        <button className="button-card">Mettre à jour les informations</button>
+                        <h3>Bio : </h3>
+                        <p>{player[0].bio}</p>
                     </div>
                 </div>
             ) : <p>Loading</p>}

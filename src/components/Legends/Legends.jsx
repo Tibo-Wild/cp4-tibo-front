@@ -19,7 +19,7 @@ export default function Legends() {
     return (
         <div className="container-legends">
             <img src={psglegends} alt="Les légendes du PSG" className="bg-legend"/>
-            <h2>Ils ont construit l'histoire du club</h2>
+            <h2>Ils ont marqué l'histoire du club</h2>
             <div>
                 <div className="legends">
                     {legendsData.map((item, index) => 
