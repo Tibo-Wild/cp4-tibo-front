@@ -21,9 +21,9 @@ export default function TrainerCard(props) {
             {player ? (
                 <div className="player-card">
                     <div className="player-card-picture">
-                        <img src={player[0].picture} alt="Portrait"/>
+                        <img src={player[0].picture2} alt="Portrait"/>
                     </div>
-                    <div>
+                    <div className="details-trainer">
                         <div className="player-name-flag">
                             <h2>{player[0].name}</h2>
                             <img src={player[0].nationality} alt="Flag"/>
@@ -33,7 +33,7 @@ export default function TrainerCard(props) {
                         <p>Date d'arrivée au club : {player[0].arrival}</p>
                         <p>Clubs entrainés : <br/> {player[0].training_club} </p>
                         <p>Carrière de joueur en club : <br/> {player[0].player_club}</p>
-                        <button className="button-card">Mettre à jour les informations</button>
+                        <p>Bio : <br /> {player[0].bio}</p>
                     </div>
                 </div>
             ) : <p>Loading</p>}

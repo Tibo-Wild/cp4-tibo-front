@@ -21,6 +21,7 @@ export default function Previous() {
             <h2 className="title-match">Scores des derniers matchs</h2>
             {previousData.map((item, index) =>
             <div className="container-previous-matchs" key={index}>
+                <p>{item.competition}</p>
                 <p className="date-match">{item.date}</p>
                 <img src={item.logo_dom} alt="Logo équipe domicile"/>
                 <p>{item.dom}</p>
