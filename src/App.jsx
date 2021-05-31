@@ -8,10 +8,16 @@ import Login from './components/Login/Login';
 import Previous from './components/Match/PreviousMatch';
 import Next from './components/Match/NextMatch';
 import Stadium from './components/Stadium/Stadium';
-import Admin from './components/admin/Admin';
+import AdminContainer from './components/admin/AdminContainer';
 import PlayerCard from './components/Card/PlayerCard';
 import TrainerCard from './components/Card/TrainerCard';
 import Legends from './components/Legends/Legends';
+import TrainerAdmin from './components/admin/TrainerAdmin'
+import PlayersAdminDelete from './components/admin/PlayersAdminDelete';
+import PlayersAdminAdd from './components/admin/PlayersAdminAdd';
+import PreviousMatchsAdmin from './components/admin/PreviousMatchsAdmin';
+import NextMatchsAdmin from './components/admin/NextMatchsAdmin';
+import PalmaresAdmin from './components/admin/PalmaresAdmin';
 
 
 function App() {
@@ -26,7 +32,13 @@ function App() {
           <Route path="/le-stade" component={Stadium}/>
           <Route path="/nos-legendes" component={Legends}/>
           <Route path="/login" component={Login}/>
-          <Route path="/admin" component={Admin}/>
+          <Route exact path="/admin" component={AdminContainer}/>
+          <Route path="/admin/entraineur" component={TrainerAdmin}/>
+          <Route path="/admin/suppression-joueur" component={PlayersAdminDelete}/>
+          <Route path="/admin/ajout-joueur" component={PlayersAdminAdd}/>
+          <Route path="/admin/derniers-matchs" component={PreviousMatchsAdmin}/>
+          <Route path="/admin/prochains-matchs" component={NextMatchsAdmin}/>
+          <Route path="/admin/palmares" component={PalmaresAdmin}/>
           <Route exact path ='/joueur/:id' component={PlayerCard} />
           <Route exact path = '/entraineur/:id' component={TrainerCard}/>
       </Switch>

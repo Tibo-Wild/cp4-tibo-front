@@ -27,6 +27,7 @@ export default function TrainerCard(props) {
                         <div className="player-name-flag">
                             <h2>{player[0].name}</h2>
                             <img src={player[0].nationality} alt="Flag"/>
+                            <h3>Adjoint : {player[0].adjoin}</h3>
                         </div>
                         <h3>{player[0].post}</h3>
                         <p>Naissance : {player[0].birthday}</p>

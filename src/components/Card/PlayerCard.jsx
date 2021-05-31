@@ -23,7 +23,7 @@ export default function PlayerCard(props) {
                     <div className="player-card-picture">
                         <img src={player[0].picture_face} alt="Portrait"/>
                     </div>
-                    <div>
+                    <div className="details-player">
                         <div className="player-name-flag">
                             <h2>{player[0].name}</h2>
                             <img src={player[0].nationality} alt="Flag"/>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Match.css';
+import imgprevious from'../../assets/parc-des-princes.jpg';
 
 
 export default function Previous() {
@@ -18,7 +19,8 @@ export default function Previous() {
 
     return (
         <div className="container-previous">
-            <h2 className="title-match">Scores des derniers matchs</h2>
+            <img src={imgprevious} alt="Bannière matchs précédents" className="bg-previous" />
+            <h2 className="title-match-previous">Scores des derniers matchs</h2>
             {previousData.map((item, index) =>
             <div className="container-previous-matchs" key={index}>
                 <p>{item.competition}</p>
