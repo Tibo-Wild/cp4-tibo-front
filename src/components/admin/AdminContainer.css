@@ -1,0 +1,31 @@
+.title-admin-container{
+    padding-top: 150px;
+}
+
+.title-admin-container h1{
+    text-align: center;
+}
+
+.div-admin-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.admin-card {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.admin-card img{
+    height: 256px;
+}
+
+.button-add-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

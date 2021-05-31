@@ -7,3 +7,107 @@
     background-color: black;
     color: #ff1541;
 }
+
+.card-admin-trainer {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card-admin-trainer h1{
+    text-align: center;
+}
+
+.card-admin-trainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-admin-form {
+    height: 150px;
+    width: 100px;
+}
+
+.picture2-admin-form {
+    height: 150px;
+    width: 150px;
+}
+
+.div-admin-picture-trainer {
+    display: flex;
+}
+
+.sub-div-admin-picture-trainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-trainer-nationality {
+    height: 50px;
+    width: 50px;
+    
+}
+
+.admin-picture-player {
+    height: 150px;
+}
+
+.card-admin-player {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card-player {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.admin-button-form {
+    background-color: #151e2d;
+    color: white;
+    border-radius: 12px;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #ff1541;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 5px;
+}
+
+.admin-button-form:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-admin-results {
+    padding-top: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.card-admin-results label, .card-admin-results input {
+    width: 170px;
+}
+
+.admin-table {
+    margin-bottom: 20px;
+}
+
+.card-admin-palmares{
+    padding-top: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-admin-palmares label, .card-admin-palmares input {
+    width: 300px;
+}
