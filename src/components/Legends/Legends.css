@@ -4,6 +4,10 @@
     border-bottom: 2px solid #ff1541;
 }
 
+.container-legends {
+    margin-bottom: 100px;
+}
+
 .container-legends h2 {
     text-align: center;
     font-size: 36px;
