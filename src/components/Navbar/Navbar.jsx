@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Link to="/"><img src={logoPSG} alt="logo"/></Link>
             </div>
             <div className="title-nav">
-                <Link to="/"><h1>infos PSG 2020/2021</h1></Link>
+                <Link to="/"><h1>PSG 2020-2021</h1></Link>
             </div>
             <div className="nav-menu">
                 <Link to="/effectif"><p>Effectif</p></Link>
