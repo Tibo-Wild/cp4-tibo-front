@@ -18,32 +18,41 @@ import PlayersAdminAdd from './components/admin/PlayersAdminAdd';
 import PreviousMatchsAdmin from './components/admin/PreviousMatchsAdmin';
 import NextMatchsAdmin from './components/admin/NextMatchsAdmin';
 import PalmaresAdmin from './components/admin/PalmaresAdmin';
+import UserContext from './components/UserContext';
+import { useState } from 'react';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 
 
 function App() {
+
+  const [user, setUser] = useState(localStorage.getItem("user"));
+
   return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/effectif" component={Players}/>
-          <Route path="/derniers-matchs" component={Previous}/>
-          <Route path="/prochains-matchs" component={Next}/>
-          <Route path="/le-stade" component={Stadium}/>
-          <Route path="/nos-legendes" component={Legends}/>
-          <Route path="/login" component={Login}/>
-          <Route exact path="/admin" component={AdminContainer}/>
-          <Route path="/admin/entraineur" component={TrainerAdmin}/>
-          <Route path="/admin/suppression-joueur" component={PlayersAdminDelete}/>
-          <Route path="/admin/ajout-joueur" component={PlayersAdminAdd}/>
-          <Route path="/admin/derniers-matchs" component={PreviousMatchsAdmin}/>
-          <Route path="/admin/prochains-matchs" component={NextMatchsAdmin}/>
-          <Route path="/admin/palmares" component={PalmaresAdmin}/>
-          <Route exact path ='/joueur/:id' component={PlayerCard} />
-          <Route exact path = '/entraineur/:id' component={TrainerCard}/>
-      </Switch>
-      <Footer />
-    </div>
+    <UserContext.Provider value={{user, setUser}}>
+      <div className="App">
+        <Navbar />
+        <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/effectif" component={Players}/>
+            <Route path="/derniers-matchs" component={Previous}/>
+            <Route path="/prochains-matchs" component={Next}/>
+            <Route path="/le-stade" component={Stadium}/>
+            <Route path="/nos-legendes" component={Legends}/>
+            <Route path="/login" component={Login}/>
+            <ProtectedRoute exact path="/admin" component={AdminContainer} from="/admin"/>
+            {/*<Route exact path="/admin" component={AdminContainer}/>*/}
+            <ProtectedRoute path="/admin/entraineur" component={TrainerAdmin} from="/admin/entraineur"/>
+            <ProtectedRoute path="/admin/suppression-joueur" component={PlayersAdminDelete} from="/admin/suppression-joueur"/>
+            <ProtectedRoute path="/admin/ajout-joueur" component={PlayersAdminAdd} from="/admin/ajout-joueur"/>
+            <ProtectedRoute path="/admin/derniers-matchs" component={PreviousMatchsAdmin} from="/admin/derniers-matchs"/>
+            <ProtectedRoute path="/admin/prochains-matchs" component={NextMatchsAdmin}from="/admin/prochains-matchs"/>
+            <ProtectedRoute path="/admin/palmares" component={PalmaresAdmin} from="/admin/palmares"/>
+            <Route exact path ='/joueur/:id' component={PlayerCard} />
+            <Route exact path = '/entraineur/:id' component={TrainerCard}/>
+        </Switch>
+        <Footer />
+      </div>
+    </UserContext.Provider>
   );
 }
 
