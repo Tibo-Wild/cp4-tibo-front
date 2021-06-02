@@ -36,3 +36,49 @@
     margin-right: 40px;
     margin-left: 40px;
 }
+
+.home-palmares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(243, 240, 240);
+
+}
+
+.home-table-palmares {
+    border-spacing: 20px 10px;
+    margin-left: 20px;
+}
+
+.home-table-palmares th{
+    text-align: start;
+}
+
+.img-palmares {
+    height: 320px;
+    margin-right: 20px;
+}
+
+.div-palmares {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home-presentation {
+    font-size: 32px;
+    text-align: center;
+}
+
+.img-home-club {
+    width: 100%;
+}
+
+.home-secondary-presentation {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
