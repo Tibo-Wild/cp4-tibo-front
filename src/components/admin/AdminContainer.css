@@ -1,5 +1,5 @@
 .title-admin-container{
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .title-admin-container h1{
@@ -29,3 +29,48 @@
     flex-direction: column;
     align-items: center;
 }
+
+.login-logout {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.login-logout button{
+    margin-left: 20px;
+}
+
+.login-logout h3{
+    padding-bottom: 7px;
+}
+
+.admin-button-form-logout {
+    background-color: #ff1541;
+    color: white;
+    border-radius: 12px;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #151e2d;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 5px;
+
+}
+
+.admin-button-form-logout:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box-logout {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    margin-right: 10px;
+    border: 1px solid black;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgb(243, 240, 240);
+    border-radius: 75px;
+}    
