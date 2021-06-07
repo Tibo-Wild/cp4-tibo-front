@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import logoPSG from '../../assets/logo_PSG.png';
 import { Link } from 'react-router-dom';
+import adminIcon from '../../assets/admin-icon.png'
 
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
                 <Link to="/prochains-matchs"><p>Prochains Matchs</p></Link>
                 <Link to="/le-stade"><p>Le stade</p></Link>
                 <Link to="/nos-legendes"><p>Légendes du club</p></Link>
-                <Link to="/login"><p>Login</p></Link>
+                <Link to="/login"> <img src={adminIcon} alt="icône accès admin" className="admin-icon"/></Link>
             </div>
         </div>
     )

@@ -21,8 +21,15 @@ export default function AdminContainer () {
       };
     return (
         <div className="title-admin-container">
+            <div className="login-logout">
+                <div>
+                </div>
+                <div className="box-logout">
+                    <h3>Bonjour {user}</h3>
+                    <button onClick={Logout} className="admin-button-form-logout">Déconnexion</button>
+                </div>
+            </div>
             <h1>Bienvenue sur l'espace administrateur</h1> 
-            <button onClick={Logout}>Déconnexion</button>
             <div className="div-admin-card">
                 <div className="admin-card">
                     <img src={soccerTrainer} alt="" />
