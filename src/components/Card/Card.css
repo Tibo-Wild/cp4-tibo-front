@@ -7,6 +7,8 @@
 
 .player-card-picture{
     height: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .player-name-flag {
     display: flex;
