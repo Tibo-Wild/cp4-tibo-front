@@ -73,3 +73,18 @@ body {
     padding-top: 5px;
     border: 1px solid white;
 }
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .nav-logo img{
+        height: 70px;
+    }
+
+    .title-nav h1 {
+        font-size: 22px;
+        margin-left: 40px;
+    }
+
+    .nav-menu p {
+        font-size: 12px;
+    }
+}

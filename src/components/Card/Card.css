@@ -1,8 +1,9 @@
+
 .player-card {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    height: 100vh;
+    height: 80vh;
 }
 
 .player-card-picture{
@@ -40,4 +41,15 @@
 
 .details-player {
     margin-right: 30px;
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .player-card-picture img{
+        height: 500px;
+    }
+
+    .player-card-picture {
+        margin-left: -100px;
+    }
 }

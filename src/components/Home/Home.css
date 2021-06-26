@@ -81,3 +81,18 @@
     margin-right: 40px;
     font-size: 20px;
 }
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .img-palmares {
+        height: 200px;
+        margin-left: 10px;
+    }
+
+    .main-sponsor img{
+        height: 80px;
+    }
+
+    .secondary-sponsor img {
+        height: 50px;
+    }
+}

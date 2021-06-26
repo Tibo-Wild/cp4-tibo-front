@@ -19,11 +19,27 @@
     padding-bottom: 30px;
 }
 .div-access iframe{
-    margin-left: 50px;
+    margin-left: 200px;
 }
 
 .presentation-stadium {
     margin-right: 50px;
     margin-left: 50px;
     font-size: 20px;
+}
+
+.presentation-stadium img{
+    width: 80vw;
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .presentation-stadium img{
+        width: 650px;
+    }
+
+    iframe {
+        width: 300px;
+        margin-right: 50px;
+        margin-left: 50px!important;
+    }
 }
